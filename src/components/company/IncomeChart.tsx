@@ -25,11 +25,11 @@ const IncomeChart = ({ incomes }: IncomeChartProps) => {
     const chartData = viewMode === 'monthly'
         ? yearData.monthly.map((value, index) => ({
             name: `Месяц ${index + 1}`,
-            value: value
+            incomes: value
         }))
         : yearData.quarterly.map((value, index) => ({
             name: `Квартал ${index + 1}`,
-            value: value
+            incomes: value
         }));
 
     return (
@@ -76,7 +76,7 @@ const IncomeChart = ({ incomes }: IncomeChartProps) => {
                         />
                         <Legend />
                         <Bar
-                            dataKey="Доход"
+                            dataKey="incomes"
                             fill="#3b82f6"
                             name="Доход (₸)"
                             radius={[4, 4, 0, 0]}
