@@ -3,7 +3,6 @@ import Link from 'next/link';
 import {FaArrowLeft} from 'react-icons/fa';
 import FavoriteButton from '@/components/favorites/FavoriteButton';
 import {companies} from "@/data/companies";
-import {Company} from "@/types/company";
 import { notFound } from 'next/navigation';
 
 type Props = {
