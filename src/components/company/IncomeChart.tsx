@@ -25,11 +25,11 @@ const IncomeChart = ({ incomes }: IncomeChartProps) => {
     const chartData = viewMode === 'monthly'
         ? yearData.monthly.map((value, index) => ({
             name: `Месяц ${index + 1}`,
-            Доход: value
+            value: value
         }))
         : yearData.quarterly.map((value, index) => ({
             name: `Квартал ${index + 1}`,
-            Доход: value
+            value: value
         }));
 
     return (
