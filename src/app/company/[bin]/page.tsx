@@ -4,16 +4,10 @@ import Link from 'next/link';
 import {FaArrowLeft} from 'react-icons/fa';
 import FavoriteButton from '@/components/favorites/FavoriteButton';
 import {companies} from "@/data/companies";
-import {notFound} from 'next/navigation';
+import {notFound, useParams} from 'next/navigation';
 
-type Props = {
-    params: {
-        bin: string;
-    };
-}
-
-const CompanyPage = async ({params}: Props) => {
-    const bin = params?.bin;
+const CompanyPage = () => {
+    const { bin } = useParams();
 
     const company = companies.find(c => c.bin === bin);
 
