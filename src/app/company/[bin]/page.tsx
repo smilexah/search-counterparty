@@ -6,11 +6,13 @@ import {companies} from "@/data/companies";
 import {Company} from "@/types/company";
 import { notFound } from 'next/navigation';
 
-interface Params {
-    bin: string;
+interface PageProps {
+    params: {
+        bin: string;
+    };
 }
 
-const CompanyPage = async ({params}: { params: Params }) => {
+const CompanyPage = async ({params}: PageProps) => {
     const { bin } = params;
 
     const company: Company | undefined = companies.find(
