@@ -11,7 +11,7 @@ interface Params {
 }
 
 const CompanyPage = async ({params}: { params: Params }) => {
-    const { bin } = await Promise.resolve(params);
+    const { bin } = params;
 
     const company: Company | undefined = companies.find(
         (comp: Company) => comp.bin === bin
