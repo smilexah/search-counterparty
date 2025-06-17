@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="px-[108px] py-16">
                 <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-6">
                     <div className="space-y-2 col-span-1">
-                        <Image src="/icons/footer-logo.svg" width={120} height={32} alt="DataFy Logo" />
+                        <Image src="/icons/footer-logo.svg" width={120} height={32} className="h-auto w-auto" alt="DataFy Logo" />
                         <p className="text-[14px] opacity-50">Современная платформа для проверки контрагентов с подборкой информации
                             и аналитики.</p>
                     </div>

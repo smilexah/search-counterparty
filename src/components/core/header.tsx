@@ -35,6 +35,7 @@ const Header: FC = () => {
               <Image
                 src="/icons/logo.svg"
                 alt="DataFy Logo"
+                className="h-auto w-auto"
                 width={100}
                 height={100}
                 priority
